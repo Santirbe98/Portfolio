@@ -6,7 +6,9 @@ import {
   Text,
   Center,
   useBreakpointValue,
+  Link,
 } from '@chakra-ui/react';
+import resume from './resume.pdf';
 
 const Titles = () => {
   return (
@@ -38,17 +40,21 @@ const Titles = () => {
 
           <Center>
             <Stack direction={{ base: 'column', md: 'row' }} spacing={4}>
-              <Button
-                rounded={'full'}
-                bg={'blue.400'}
-                color={'white'}
-                _hover={{
-                  bg: 'blue.500',
-                }}
-              >
-                Download resume
-              </Button>
-              <Button rounded={'full'}>Contact me!</Button>
+              <a href={resume} download>
+                <Button
+                  rounded={'full'}
+                  bg={'blue.400'}
+                  color={'white'}
+                  _hover={{
+                    bg: 'blue.500',
+                  }}
+                >
+                  Download resume
+                </Button>
+              </a>
+              <Link>
+                <Button rounded={'full'}>Contact me!</Button>
+              </Link>
             </Stack>
           </Center>
         </Stack>

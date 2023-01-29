@@ -5,7 +5,7 @@ import { proyects } from './data.js';
 
 const ProyectCards = () => {
   return (
-    <Box mt={100}>
+    <Box mt={100} id="proyects">
       <Center>
         <Heading as="h1">My recent proyects</Heading>
       </Center>

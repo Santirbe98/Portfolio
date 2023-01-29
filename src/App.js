@@ -1,5 +1,5 @@
 import React from 'react';
-import { ChakraProvider, Box, Grid, theme, Flex } from '@chakra-ui/react';
+import { ChakraProvider, Box, Grid, theme } from '@chakra-ui/react';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import Titles from './components/Titles/Titles';
 import Footer from './components/Footer/Footer';

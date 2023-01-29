@@ -10,7 +10,7 @@ import React from 'react';
 
 const MySkills = () => {
   return (
-    <Box>
+    <Box id="mySkills">
       <Heading
         align="center"
         as="h2"
