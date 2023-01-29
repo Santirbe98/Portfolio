@@ -68,10 +68,10 @@ export default function ProyectCard({
           <Text color={'gray.500'}>{description}</Text>
         </Stack>
         <Stack mt={3}>
-          <a href={githubRepo} target="_blank">
+          <a href={githubRepo} target="_blank" rel="noreferrer">
             <Button> Github Repo </Button>
           </a>
-          <a href={liveDemo} target="_blank">
+          <a href={liveDemo} target="_blank" rel="noreferrer">
             <Button isDisabled={liveDemo ? false : true} colorScheme="blue">
               Live Demo
             </Button>

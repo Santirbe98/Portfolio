@@ -29,7 +29,7 @@ const MySkills = () => {
           <Text>Front End</Text>
           <Box
             minH={180}
-            bg={useColorModeValue('blue.400', 'white')}
+            bg={useColorModeValue('gray.100', 'gray.900')}
             boxShadow={'2xl'}
             rounded={'md'}
             p={6}
@@ -119,7 +119,7 @@ const MySkills = () => {
           <Text>Back-end</Text>
           <Box
             minH={180}
-            bg={useColorModeValue('blue.400', 'white')}
+            bg={useColorModeValue('gray.100', 'gray.900')}
             boxShadow={'2xl'}
             rounded={'md'}
             p={6}
@@ -142,7 +142,7 @@ const MySkills = () => {
                   rel="noreferrer"
                 >
                   <img
-                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg"
+                    src="https://i.ibb.co/c6768Kc/https3987944058-files-gitbook-io-filesv0bgitbook-legacy-filesoassets2-F-Lh14lb3-LH4-C886q-Wx-YA2-FSc.png"
                     alt="express"
                     width="40"
                     height="40"
@@ -160,6 +160,22 @@ const MySkills = () => {
                   <img
                     src="https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg"
                     alt="heroku"
+                    width="40"
+                    height="40"
+                  />
+                </a>
+              </Stack>
+              <Stack
+                pt={5}
+                _hover={{
+                  transitionDuration: '0.5s',
+                  transform: 'rotate(5deg) scale(1.2)',
+                }}
+              >
+                <a href="https://railway.app/" target="_blank" rel="noreferrer">
+                  <img
+                    src="https://railway.app/brand/logo-light.png"
+                    alt="railway"
                     width="40"
                     height="40"
                   />
@@ -228,7 +244,7 @@ const MySkills = () => {
           <Text>programming languages</Text>
           <Box
             minH={180}
-            bg={useColorModeValue('blue.400', 'white')}
+            bg={useColorModeValue('gray.100', 'gray.900')}
             boxShadow={'2xl'}
             rounded={'md'}
             p={6}
@@ -285,7 +301,7 @@ const MySkills = () => {
           <Text>Extras</Text>
           <Box
             minH={180}
-            bg={useColorModeValue('blue.400', 'white')}
+            bg={useColorModeValue('gray.100', 'gray.900')}
             boxShadow={'2xl'}
             rounded={'md'}
             p={6}
