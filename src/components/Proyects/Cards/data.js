@@ -24,13 +24,12 @@ export const proyects = [
   },
   {
     id: 3,
-    name: 'E-Comerce Exo-Otaku',
+    name: 'Poryecto inmobiliaria',
     image: '',
     description:
-      'Participación en el desarrollo de un proyecto de comercio electrónico para una tienda local. En este proyecto utilizamos metodología ágil (SCRUM).Una vez a la semana compartíamos los avances en el proyecto con nuestro Product Owner. En el FRONT utilizamos React, Redux, MUI y otras librerías; en el Back Node.js, Express, y para la BD   PostgreSQL y Sequelize',
-    date: 'febrero 2022',
-    githubRepo: 'https://github.com/Santirbe98/PF-ExoOtaku',
-    liveDemo: 'https://pf-exo-otaku.vercel.app/',
-    state: 'finish',
+      'Participation in the development of a project for a local real estate company. In the FRONT we use React, Redux, Chakra UI and other libraries; in the Back Node.js, Express, and for the DB MySql and Sequelize, the programming lenguaje we used is typeScript.',
+    date: '2023...',
+    githubRepo: 'https://github.com/salvaarmanasco/Proyecto-Inmobiliario',
+    state: 'in progress',
   },
 ];
