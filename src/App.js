@@ -5,6 +5,7 @@ import Titles from './components/Titles/Titles';
 import Footer from './components/Footer/Footer';
 import About from './components/About/About';
 import ProyectCards from './components/Proyects/Cards/ProyectCards';
+import MySkills from './components/MySkills/MySkills';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Titles />
           <About />
           <ProyectCards />
+          <MySkills />
           <Footer />
         </Grid>
       </Box>
