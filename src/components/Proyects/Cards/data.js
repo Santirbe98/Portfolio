@@ -9,6 +9,7 @@ export const proyects = [
     githubRepo: 'https://github.com/Santirbe98/PF-ExoOtaku',
     liveDemo: 'https://pf-exo-otaku.vercel.app/',
     state: 'finish',
+    proyectImage: 'https://i.ibb.co/R6M346R/exootaku.png',
   },
   {
     id: 2,
@@ -19,6 +20,7 @@ export const proyects = [
     date: 'November 2022',
     githubRepo: 'https://github.com/Santirbe98/PI-Dogs',
     state: 'finish',
+    proyectImage: 'https://i.ibb.co/BVH7yX1/Dise-o-pagina.png',
   },
   {
     id: 3,
