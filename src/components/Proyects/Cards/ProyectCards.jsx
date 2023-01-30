@@ -1,11 +1,11 @@
-import { Box, Center, Heading, SimpleGrid, Text } from '@chakra-ui/react';
+import { Box, Center, Heading, SimpleGrid } from '@chakra-ui/react';
 import React from 'react';
 import ProyectCard from '../Card/ProyectCard';
 import { proyects } from './data.js';
 
 const ProyectCards = () => {
   return (
-    <Box mt={100}>
+    <Box mt={100} id="proyects">
       <Center>
         <Heading as="h1">My recent proyects</Heading>
       </Center>
@@ -16,6 +16,7 @@ const ProyectCards = () => {
       >
         {proyects.map(p => (
           <ProyectCard
+            proyectImage={p.proyectImage}
             key={p.id}
             name={p.name}
             description={p.description}
