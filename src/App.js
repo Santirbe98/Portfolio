@@ -27,8 +27,8 @@ function App() {
           <MySkills />
           <Testimonials />
           <Contact />
-          <Footer />
         </Grid>
+        <Footer />
       </Box>
     </ChakraProvider>
   );
