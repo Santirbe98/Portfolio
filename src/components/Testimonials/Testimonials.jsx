@@ -97,10 +97,14 @@ const Testimonials = () => {
         >
           <Testimonial>
             <TestimonialContent>
-              <TestimonialHeading>Efficient Collaborating</TestimonialHeading>
+              <TestimonialHeading>Always ready</TestimonialHeading>
               <TestimonialText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor
-                neque sed imperdiet nibh lectus feugiat nunc sem.
+                Santiago is a really competent and hardworking devloper who is
+                always in good mood and has a predisposition to help and solve
+                problems. Key member in the proyects who we work together, his
+                capabilities in organizing, planning and tech skills were
+                awesome. I assure I have learnt a lot from him, which helps me
+                to this day.
               </TestimonialText>
             </TestimonialContent>
             <TestimonialAvatar
@@ -111,10 +115,15 @@ const Testimonials = () => {
           </Testimonial>
           <Testimonial>
             <TestimonialContent>
-              <TestimonialHeading>Intuitive Design</TestimonialHeading>
+              <TestimonialHeading>Good lead</TestimonialHeading>
               <TestimonialText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor
-                neque sed imperdiet nibh lectus feugiat nunc sem.
+                Santiago is a personal friend for many years and I was fortunate
+                to be able to walk the path of the Bootcamp "Soy Henry" with
+                him. He proved to be a person who can lead a group, organize it
+                and make sure that we can bring out the best potential of us. I
+                believe that wherever he goes in his professional career he will
+                be able to bring some of that enthusiasm and the desire to
+                continue growing.
               </TestimonialText>
             </TestimonialContent>
             <TestimonialAvatar
@@ -127,8 +136,13 @@ const Testimonials = () => {
             <TestimonialContent>
               <TestimonialHeading>Mindblowing Service</TestimonialHeading>
               <TestimonialText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor
-                neque sed imperdiet nibh lectus feugiat nunc sem.
+                Santiago is a personal friend for many years and I was fortunate
+                to be able to walk the path of the Bootcamp "Soy Henry" with
+                him. He proved to be a person who can lead a group, organize it
+                and make sure that we can bring out the best potential of us. I
+                believe that wherever he goes in his professional career he will
+                be able to bring some of that enthusiasm and the desire to
+                continue growing.
               </TestimonialText>
             </TestimonialContent>
             <TestimonialAvatar

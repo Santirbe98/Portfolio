@@ -19,7 +19,7 @@ import {
   VStack,
 } from '@chakra-ui/react';
 import emailjs from '@emailjs/browser';
-import { BsFillPersonFill } from 'react-icons/bs';
+import { BsFillPersonFill, BsPhone } from 'react-icons/bs';
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
 import { useRef, useState } from 'react';
 
@@ -128,6 +128,22 @@ export default function Contact() {
                     isRound
                   />
                 </Link>
+                <Link
+                  href="https://api.whatsapp.com/send?phone=543425091381"
+                  target="_blank"
+                >
+                  <IconButton
+                    aria-label="whatsapp"
+                    variant="ghost"
+                    size="lg"
+                    icon={<BsPhone size="28px" />}
+                    _hover={{
+                      bg: 'blue.500',
+                      color: useColorModeValue('white', 'gray.700'),
+                    }}
+                    isRound
+                  />
+                </Link>
               </Stack>
 
               <Box
@@ -183,7 +199,6 @@ export default function Contact() {
                         _hover={{
                           bg: useColorModeValue('gray.800', 'blue.500'),
                         }}
-                        isFullWidth
                         type="submit"
                       >
                         {!loadingEmail ? (
