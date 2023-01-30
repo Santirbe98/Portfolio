@@ -25,7 +25,10 @@ export default function Footer() {
         <Text fontSize="4xl" fontFamily="-moz-initial">
           Santiago Bonetto
         </Text>
-        <Stack direction={'row'} spacing={6}>
+        <Stack
+          direction={{ base: 'column', sm: 'column', md: 'row' }}
+          spacing={6}
+        >
           <Link
             to="home"
             spy={true}
