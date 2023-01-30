@@ -16,7 +16,7 @@ const MySkills = () => {
         as="h2"
         color={useColorModeValue('gray.700', 'gray.200')}
       >
-        Languages and Tools:
+        Languages and Tools
       </Heading>
       <SimpleGrid
         mt={10}
