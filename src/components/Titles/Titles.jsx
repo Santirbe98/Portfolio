@@ -6,8 +6,8 @@ import {
   Text,
   Center,
   useBreakpointValue,
-  Link,
 } from '@chakra-ui/react';
+import { Link } from 'react-scroll';
 import resume from './resume.pdf';
 
 const Titles = () => {
@@ -52,7 +52,13 @@ const Titles = () => {
                   Download resume
                 </Button>
               </a>
-              <Link>
+              <Link
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+              >
                 <Button rounded={'full'}>Contact me!</Button>
               </Link>
             </Stack>
