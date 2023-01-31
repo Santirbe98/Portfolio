@@ -7,8 +7,10 @@ import {
   Stack,
 } from '@chakra-ui/react';
 import React from 'react';
+import { useSelector } from 'react-redux';
 
 const MySkills = () => {
+  const lenguage = useSelector(state => state.lenguage);
   return (
     <Box id="mySkills" pt={20}>
       <Heading
@@ -16,7 +18,7 @@ const MySkills = () => {
         as="h2"
         color={useColorModeValue('gray.700', 'gray.200')}
       >
-        Languages and Tools
+        {!lenguage ? 'Languages and Tools' : 'Herramientas y lenguajes'}
       </Heading>
       <SimpleGrid
         mt={10}
