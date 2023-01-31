@@ -141,9 +141,8 @@ const Testimonials = () => {
                 continue growing.`
                   : `Santiago es un amigo personal desde hace muchos años y tuve la suerte de
                 de poder recorrer el camino del Bootcamp "Soy Henry" con
-                con él. Demostró ser una persona capaz de liderar un grupo, organizarlo
-                y asegurarse de que podemos sacar el mejor potencial de nosotros. I
-                Creo que allá donde vaya en su carrera profesional podrá
+                él. Demostró ser una persona capaz de liderar un grupo, organizarlo
+                y asegurarse de que podemos sacar el mejor potencial de nosotros. Creo que allá donde vaya en su carrera profesional podrá
                 será capaz de aportar algo de ese entusiasmo y el deseo de
                 de seguir creciendo.`}
               </TestimonialText>
