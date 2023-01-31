@@ -241,7 +241,7 @@ const MySkills = () => {
           </Box>
         </Stack>
         <Stack>
-          <Text>programming languages</Text>
+          <Text>Programming languages</Text>
           <Box
             minH={180}
             bg={useColorModeValue('gray.100', 'gray.900')}

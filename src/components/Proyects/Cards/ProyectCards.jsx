@@ -11,6 +11,7 @@ const ProyectCards = () => {
       </Center>
       <SimpleGrid
         columns={{ base: 1, md: 2, xl: 3 }}
+        alignItems="flex-start"
         spacingX="40px"
         spacingY="20px"
       >
