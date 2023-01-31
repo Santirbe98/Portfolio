@@ -19,7 +19,7 @@ import {
   VStack,
 } from '@chakra-ui/react';
 import emailjs from '@emailjs/browser';
-import { BsFillPersonFill, BsPhone } from 'react-icons/bs';
+import { BsFillPersonFill } from 'react-icons/bs';
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
 import { useRef, useState } from 'react';
 
