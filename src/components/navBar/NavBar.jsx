@@ -4,6 +4,7 @@ import {
   Box,
   Fade,
   Stack,
+  Text,
   useColorModeValue,
   useDisclosure,
 } from '@chakra-ui/react';
@@ -12,9 +13,21 @@ import { BsFillPersonFill, BsBookmarksFill, BsTools } from 'react-icons/bs';
 import { GiTalk } from 'react-icons/gi';
 import { AiFillHome } from 'react-icons/ai';
 import { Link } from 'react-scroll';
+import { useDispatch, useSelector } from 'react-redux';
+import { changeLenguage } from '../../redux/actions';
 
 const NavBar = props => {
   const { isOpen, onToggle } = useDisclosure();
+  const dispatch = useDispatch();
+  const handleChangeLenguage = e => {
+    if (e === 'ENG') {
+      dispatch(changeLenguage(true));
+    } else {
+      dispatch(changeLenguage(false));
+    }
+  };
+  const lenguage = useSelector(state => state.lenguage);
+
   return (
     <Box shadow="md" {...props}>
       <IconButton
@@ -40,6 +53,22 @@ const NavBar = props => {
           color={useColorModeValue('gray.700', 'whiteAlpha.900')}
         >
           <Stack
+            _hover={{
+              bg: useColorModeValue('gray.200', 'gray.700'),
+              cursor: 'pointer',
+            }}
+            p="5px"
+            borderRadius="2xl"
+          >
+            <Text
+              fontSize="11px"
+              onClick={e => handleChangeLenguage(e.target.outerText)}
+            >
+              {!lenguage ? 'ENG' : 'ESP'}
+            </Text>
+          </Stack>
+          <Stack
+            mt={5}
             _hover={{
               bg: useColorModeValue('gray.200', 'gray.700'),
               cursor: 'pointer',
