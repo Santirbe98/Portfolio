@@ -134,15 +134,15 @@ const Testimonials = () => {
           </Testimonial>
           <Testimonial>
             <TestimonialContent>
-              <TestimonialHeading>Mindblowing Service</TestimonialHeading>
+              <TestimonialHeading>Optimistic</TestimonialHeading>
               <TestimonialText>
-                Santiago is a personal friend for many years and I was fortunate
-                to be able to walk the path of the Bootcamp "Soy Henry" with
-                him. He proved to be a person who can lead a group, organize it
-                and make sure that we can bring out the best potential of us. I
-                believe that wherever he goes in his professional career he will
-                be able to bring some of that enthusiasm and the desire to
-                continue growing.
+                I had the pleasure of having studied with Santiago, if there is
+                something I would highlight about him is that he is a very
+                optimistic person. It is also worth mentioning that he knows how
+                to work in a team supporting his peers for an excellent group
+                growth. Undoubtedly he contributes in every job he does all his
+                technical knowledge and, even more, an impeccable human behavior
+                that, together, make him a complete professional.
               </TestimonialText>
             </TestimonialContent>
             <TestimonialAvatar
