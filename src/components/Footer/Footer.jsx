@@ -6,9 +6,11 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react';
 import { BsFillBriefcaseFill } from 'react-icons/bs';
+import { useSelector } from 'react-redux';
 import { Link } from 'react-scroll';
 
 export default function Footer() {
+  const lenguage = useSelector(state => state.lenguage);
   return (
     <Box
       bg={useColorModeValue('gray.200', 'gray.900')}
@@ -37,7 +39,7 @@ export default function Footer() {
             duration={500}
             style={{ cursor: 'pointer' }}
           >
-            Home
+            {!lenguage ? `Home` : `Inicio`}
           </Link>
           <Link
             to="about"
@@ -47,7 +49,7 @@ export default function Footer() {
             duration={500}
             style={{ cursor: 'pointer' }}
           >
-            About
+            {!lenguage ? `About` : `Sobre mi`}
           </Link>
           <Link
             to="mySkills"
@@ -57,7 +59,7 @@ export default function Footer() {
             duration={500}
             style={{ cursor: 'pointer' }}
           >
-            Skills
+            {!lenguage ? `Skills` : `Habilidades`}
           </Link>
           <Link
             to="testimonials"
@@ -67,7 +69,7 @@ export default function Footer() {
             duration={500}
             style={{ cursor: 'pointer' }}
           >
-            Testimonials
+            {!lenguage ? `Testimonials` : `Testimonios`}
           </Link>
           <Link
             to="contact"
@@ -77,7 +79,7 @@ export default function Footer() {
             duration={500}
             style={{ cursor: 'pointer' }}
           >
-            Contact
+            {!lenguage ? `Contact` : `Contacto`}
           </Link>
         </Stack>
       </Container>
@@ -95,7 +97,11 @@ export default function Footer() {
           justify="center"
           align={{ base: 'center', md: 'center' }}
         >
-          <Text fontSize="small">© 2023 SB Dev. All rights reserved</Text>
+          <Text fontSize="small">
+            {!lenguage
+              ? `© 2023 SB Dev. All rights reserved`
+              : `© 2023 SB Dev. Todos los derechos reservados`}
+          </Text>
         </Container>
       </Box>
     </Box>

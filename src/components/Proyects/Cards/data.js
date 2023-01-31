@@ -51,12 +51,13 @@ export const proyects2 = [
     description:
       'Desarrollo de una App Web utilizando React para el Front End y Redux como state management. Todos los Componentes fueron desarrollados con CSS sin uso de librerías externas. La SPA consume datos de una API("the dog api" https://thedogapi.com/) a través de un Back End desarrollado en Node.JS utilizando Express, agregando nuevas funcionalidades a la API original.',
     githubRepo: 'https://github.com/Santirbe98/PI-Dogs',
+    date: 'November 2022',
     state: 'finish',
     proyectImage: 'https://i.ibb.co/BVH7yX1/Dise-o-pagina.png',
   },
   {
     id: 3,
-    name: 'Real State Proyect',
+    name: 'Proyecto inmobiliaria',
     description:
       'Participación en el desarrollo de un proyecto para una inmobiliaria local. En el FRONT utilizamos React, Redux, Chakra UI y otras librerías; en el Back Node.js, Express, y para la BD MySql y Sequelize, el lenguaje de programación que utilizamos es typeScript.',
     date: '2023...',

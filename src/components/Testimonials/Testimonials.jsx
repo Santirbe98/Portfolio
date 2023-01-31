@@ -8,6 +8,7 @@ import {
   Avatar,
   useColorModeValue,
 } from '@chakra-ui/react';
+import { useSelector } from 'react-redux';
 
 const Testimonial = ({ children }) => {
   return <Box>{children}</Box>;
@@ -84,12 +85,17 @@ const TestimonialAvatar = ({ src, name, title, linkedin }) => {
 };
 
 const Testimonials = () => {
+  const lenguage = useSelector(state => state.lenguage);
   return (
     <Box bg={useColorModeValue('gray.100', 'gray.700')} id="testimonials">
       <Container maxW={'7xl'} py={16} as={Stack} spacing={12}>
         <Stack spacing={0} align={'center'}>
-          <Heading>Testimonials</Heading>
-          <Text>feedback from my colleagues</Text>
+          <Heading>{!lenguage ? 'Testimonials' : 'Testimonios'}</Heading>
+          <Text>
+            {!lenguage
+              ? `feedback from my colleagues`
+              : `feedback de mis colegas`}
+          </Text>
         </Stack>
         <Stack
           direction={{ base: 'column', md: 'row' }}
@@ -97,14 +103,20 @@ const Testimonials = () => {
         >
           <Testimonial>
             <TestimonialContent>
-              <TestimonialHeading>Always ready</TestimonialHeading>
+              <TestimonialHeading>
+                {!lenguage ? `Always ready` : `Siempre predispuesto`}
+              </TestimonialHeading>
               <TestimonialText>
-                Santiago is a really competent and hardworking devloper who is
+                {!lenguage
+                  ? `Santiago is a really competent and hardworking devloper who is
                 always in good mood and has a predisposition to help and solve
                 problems. Key member in the proyects who we work together, his
                 capabilities in organizing, planning and tech skills were
                 awesome. I assure I have learnt a lot from him, which helps me
-                to this day.
+                to this day.`
+                  : `Santiago es un desarrollador realmente competente y trabajador que siempre está de buen humor y tiene    predisposición para ayudar y resolver problemas.
+                     Miembro clave en los proyectos que trabajamos juntos, sus capacidades de organización, planificación y habilidades tecnológicas eran impresionantes. 
+                    Aseguro haber aprendido mucho de él, lo que me ayuda hasta el día de hoy.`}
               </TestimonialText>
             </TestimonialContent>
             <TestimonialAvatar
@@ -115,15 +127,25 @@ const Testimonials = () => {
           </Testimonial>
           <Testimonial>
             <TestimonialContent>
-              <TestimonialHeading>Good lead</TestimonialHeading>
+              <TestimonialHeading>
+                {!lenguage ? `Good lead` : `Buen lider`}
+              </TestimonialHeading>
               <TestimonialText>
-                Santiago is a personal friend for many years and I was fortunate
+                {!lenguage
+                  ? `Santiago is a personal friend for many years and I was fortunate
                 to be able to walk the path of the Bootcamp "Soy Henry" with
                 him. He proved to be a person who can lead a group, organize it
                 and make sure that we can bring out the best potential of us. I
                 believe that wherever he goes in his professional career he will
                 be able to bring some of that enthusiasm and the desire to
-                continue growing.
+                continue growing.`
+                  : `Santiago es un amigo personal desde hace muchos años y tuve la suerte de
+                de poder recorrer el camino del Bootcamp "Soy Henry" con
+                con él. Demostró ser una persona capaz de liderar un grupo, organizarlo
+                y asegurarse de que podemos sacar el mejor potencial de nosotros. I
+                Creo que allá donde vaya en su carrera profesional podrá
+                será capaz de aportar algo de ese entusiasmo y el deseo de
+                de seguir creciendo.`}
               </TestimonialText>
             </TestimonialContent>
             <TestimonialAvatar
@@ -134,15 +156,20 @@ const Testimonials = () => {
           </Testimonial>
           <Testimonial>
             <TestimonialContent>
-              <TestimonialHeading>Optimistic</TestimonialHeading>
+              <TestimonialHeading>
+                {!lenguage ? `Optimistic` : `Optimista`}
+              </TestimonialHeading>
               <TestimonialText>
-                I had the pleasure of having studied with Santiago, if there is
+                {!lenguage
+                  ? `I had the pleasure of having studied with Santiago, if there is
                 something I would highlight about him is that he is a very
                 optimistic person. It is also worth mentioning that he knows how
                 to work in a team supporting his peers for an excellent group
                 growth. Undoubtedly he contributes in every job he does all his
                 technical knowledge and, even more, an impeccable human behavior
-                that, together, make him a complete professional.
+                that, together, make him a complete professional.`
+                  : `Tuve el agrado de haber estudiado con Santiago, si hay algo que resaltaría de el es que es una persona muy optimista. Así mismo cabe resaltar que sabe trabajar en equipo apoyando a sus pares para un crecimiento grupal excelente.
+                Indudablemente aporta en cada trabajo que realiza todos sus conocimientos técnicos y, más aún, un comportamiento humano impecable que, juntos, lo hacen un profesional completo.`}
               </TestimonialText>
             </TestimonialContent>
             <TestimonialAvatar
