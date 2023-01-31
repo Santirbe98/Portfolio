@@ -19,14 +19,16 @@ import {
   VStack,
 } from '@chakra-ui/react';
 import emailjs from '@emailjs/browser';
-import { BsFillPersonFill, BsPhone } from 'react-icons/bs';
+import { BsFillPersonFill } from 'react-icons/bs';
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
 import { useRef, useState } from 'react';
+import { useSelector } from 'react-redux';
 
 export default function Contact() {
   const { hasCopied, onCopy } = useClipboard('santirbe@gmail.com');
   const formRef = useRef();
   const [loadingEmail, setLoadingEmail] = useState(false);
+  const lenguage = useSelector(state => state.lenguage);
   const handleSubmit = e => {
     e.preventDefault();
     setLoadingEmail(true);
@@ -65,7 +67,7 @@ export default function Contact() {
                 md: '5xl',
               }}
             >
-              Contact me!
+              {!lenguage ? `Contact me!` : `Contacto!`}
             </Heading>
 
             <Stack
@@ -141,7 +143,7 @@ export default function Contact() {
                 <VStack spacing={5}>
                   <form onSubmit={handleSubmit} ref={formRef}>
                     <FormControl isRequired>
-                      <FormLabel>Name</FormLabel>
+                      <FormLabel>{!lenguage ? `Name` : `Nombre`}</FormLabel>
 
                       <InputGroup>
                         <InputLeftElement children={<BsFillPersonFill />} />
@@ -167,7 +169,7 @@ export default function Contact() {
                     </FormControl>
 
                     <FormControl isRequired>
-                      <FormLabel>Message</FormLabel>
+                      <FormLabel>{!lenguage ? `Message` : `Mensaje`}</FormLabel>
 
                       <Textarea
                         name="user_message"
@@ -186,7 +188,11 @@ export default function Contact() {
                         type="submit"
                       >
                         {!loadingEmail ? (
-                          'Send Message'
+                          !lenguage ? (
+                            'Send Message'
+                          ) : (
+                            'Enviar mensaje'
+                          )
                         ) : (
                           <CircularProgress
                             isIndeterminate

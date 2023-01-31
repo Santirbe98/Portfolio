@@ -7,10 +7,12 @@ import {
   Center,
   useBreakpointValue,
 } from '@chakra-ui/react';
+import { useSelector } from 'react-redux';
 import { Link } from 'react-scroll';
 import resume from './resume.pdf';
 
 const Titles = () => {
+  const lenguage = useSelector(state => state.lenguage);
   return (
     <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }} id="home">
       <Flex p={8} flex={1} align={'center'} justify={'center'}>
@@ -30,7 +32,7 @@ const Titles = () => {
                 zIndex: -1,
               }}
             >
-              Hi! I'm Santiago
+              {!lenguage ? `Hi! I'm Santiago` : `Hola!, soy Santiago`}
             </Text>
             <br />
             <Text color={'blue.400'} as={'span'}>
@@ -49,7 +51,7 @@ const Titles = () => {
                     bg: 'blue.500',
                   }}
                 >
-                  Download resume
+                  {!lenguage ? `Download resume` : `Descargar CV`}
                 </Button>
               </a>
               <Link
@@ -59,7 +61,9 @@ const Titles = () => {
                 offset={50}
                 duration={500}
               >
-                <Button rounded={'full'}>Contact me!</Button>
+                <Button rounded={'full'}>
+                  {!lenguage ? `Contact me!` : `Contacto!`}
+                </Button>
               </Link>
             </Stack>
           </Center>
