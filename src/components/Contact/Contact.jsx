@@ -43,7 +43,9 @@ export default function Contact() {
         result => {
           console.log(result.text);
           setLoadingEmail(false);
-          alert('The message was successfully sent');
+          !lenguage
+            ? alert('The message was successfully sent')
+            : alert('Mensaje enviado con exito');
         },
         error => {
           setLoadingEmail(false);
