@@ -76,7 +76,14 @@ const NavBar = props => {
             p="5px"
             borderRadius="2xl"
           >
-            <Link to="home" spy={true} smooth={true} offset={50} duration={500}>
+            <Link
+              to="home"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+              onClick={onToggle}
+            >
               <AiFillHome />
             </Link>
           </Stack>
@@ -91,6 +98,7 @@ const NavBar = props => {
           >
             <Link
               to="about"
+              onClick={onToggle}
               spy={true}
               smooth={true}
               offset={50}
@@ -110,6 +118,7 @@ const NavBar = props => {
           >
             <Link
               to="proyects"
+              onClick={onToggle}
               spy={true}
               smooth={true}
               offset={50}
@@ -129,6 +138,7 @@ const NavBar = props => {
           >
             <Link
               to="mySkills"
+              onClick={onToggle}
               spy={true}
               smooth={true}
               offset={50}
@@ -148,6 +158,7 @@ const NavBar = props => {
           >
             <Link
               to="contact"
+              onClick={onToggle}
               spy={true}
               smooth={true}
               offset={50}
