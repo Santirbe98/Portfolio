@@ -12,7 +12,7 @@ import { useSelector } from 'react-redux';
 const MySkills = () => {
   const lenguage = useSelector(state => state.lenguage);
   return (
-    <Box id="mySkills" pt={20}>
+    <Box id="mySkills" pt={20} w="80%" justifySelf="center" pb={100}>
       <Heading
         align="center"
         as="h2"
@@ -23,7 +23,7 @@ const MySkills = () => {
       <SimpleGrid
         mt={10}
         mb={10}
-        columns={{ base: 1, sm: 2, md: 4, xl: 4 }}
+        columns={{ base: 1, sm: 2, md: 4 }}
         spacingX="40px"
         spacingY="20px"
       >
@@ -38,7 +38,7 @@ const MySkills = () => {
             overflow={'hidden'}
           >
             <SimpleGrid
-              columns={{ base: 3, sm: 3, md: 3, xl: 4 }}
+              columns={{ base: 3, sm: 3, md: 3 }}
               pl={{ base: 10, sm: 5, md: 3 }}
             >
               <Stack
@@ -113,6 +113,22 @@ const MySkills = () => {
                   />
                 </a>
               </Stack>
+              <Stack
+                pt={5}
+                _hover={{
+                  transitionDuration: '0.5s',
+                  transform: 'rotate(5deg) scale(1.2)',
+                }}
+              >
+                <a href="https://nextjs.org/" target="_blank" rel="noreferrer">
+                  <img
+                    src="https://www.drupal.org/files/project-images/nextjs-icon-dark-background.png"
+                    alt="Next"
+                    width="40"
+                    height="40"
+                  />
+                </a>
+              </Stack>
             </SimpleGrid>
           </Box>
         </Stack>
@@ -128,7 +144,7 @@ const MySkills = () => {
             overflow={'hidden'}
           >
             <SimpleGrid
-              columns={{ base: 3, sm: 3, md: 3, xl: 4 }}
+              columns={{ base: 3, sm: 3, md: 3 }}
               pl={{ base: 10, sm: 5, md: 3 }}
             >
               <Stack
@@ -253,7 +269,7 @@ const MySkills = () => {
             overflow={'hidden'}
           >
             <SimpleGrid
-              columns={{ base: 3, sm: 3, md: 3, xl: 4 }}
+              columns={{ base: 3, sm: 3, md: 3 }}
               pl={{ base: 10, sm: 5, md: 3 }}
             >
               <Stack
