@@ -43,7 +43,9 @@ export default function Contact() {
         result => {
           console.log(result.text);
           setLoadingEmail(false);
-          alert('The message was successfully sent');
+          !lenguage
+            ? alert('The message was successfully sent')
+            : alert('Mensaje enviado con exito');
         },
         error => {
           setLoadingEmail(false);
@@ -150,7 +152,7 @@ export default function Contact() {
                         <Input
                           type="text"
                           name="user_name"
-                          placeholder="Your Name"
+                          placeholder={!lenguage ? `Your name` : `Tu nombre`}
                         />
                       </InputGroup>
                     </FormControl>
@@ -163,7 +165,7 @@ export default function Contact() {
                         <Input
                           type="email"
                           name="user_email"
-                          placeholder="Your Email"
+                          placeholder={!lenguage ? `Your email` : `Tu email`}
                         />
                       </InputGroup>
                     </FormControl>
@@ -173,7 +175,7 @@ export default function Contact() {
 
                       <Textarea
                         name="user_message"
-                        placeholder="Your Message"
+                        placeholder={!lenguage ? `Your Message` : `Tu mensaje`}
                         rows={6}
                         resize="none"
                       />
