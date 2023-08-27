@@ -73,7 +73,7 @@ export default function ProyectCard({
           </a>
           <a href={liveDemo} target="_blank" rel="noreferrer">
             <Button isDisabled={liveDemo ? false : true} colorScheme="blue">
-              Live Demo
+              Link / Live demo
             </Button>
           </a>
         </Stack>
