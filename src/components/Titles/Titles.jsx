@@ -9,7 +9,7 @@ import {
 } from '@chakra-ui/react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-scroll';
-import resume from './resume.pdf';
+import resume from './CV.pdf';
 
 const Titles = () => {
   const lenguage = useSelector(state => state.lenguage);

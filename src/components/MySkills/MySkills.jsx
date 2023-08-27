@@ -129,6 +129,22 @@ const MySkills = () => {
                   />
                 </a>
               </Stack>
+              <Stack
+                pt={5}
+                _hover={{
+                  transitionDuration: '0.5s',
+                  transform: 'rotate(5deg) scale(1.2)',
+                }}
+              >
+                <a href="https://vercel.com/" target="_blank" rel="noreferrer">
+                  <img
+                    src="https://assets.vercel.com/image/upload/front/favicon/vercel/180x180.png"
+                    alt="Next"
+                    width="40"
+                    height="40"
+                  />
+                </a>
+              </Stack>
             </SimpleGrid>
           </Box>
         </Stack>
