@@ -9,7 +9,8 @@ import {
 } from '@chakra-ui/react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-scroll';
-import resume from './CV.pdf';
+import cv from './CV.pdf';
+import resume from './Resume.pdf';
 
 const Titles = () => {
   const lenguage = useSelector(state => state.lenguage);
@@ -42,7 +43,7 @@ const Titles = () => {
 
           <Center>
             <Stack direction={{ base: 'column', md: 'row' }} spacing={4}>
-              <a href={resume} download>
+              <a href={!lenguage ? resume : cv} download>
                 <Button
                   rounded={'full'}
                   bg={'blue.400'}
