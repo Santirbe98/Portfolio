@@ -177,6 +177,27 @@ const Testimonials = () => {
               linkedin="https://www.linkedin.com/in/cerutti-sebasti%C3%A1ng/"
             />
           </Testimonial>
+          <Testimonial>
+            <TestimonialContent>
+              <TestimonialHeading>
+                {!lenguage ? `contributory` : `contributivo`}
+              </TestimonialHeading>
+              <TestimonialText>
+                {!lenguage
+                  ? `With Santiago we started together in the same company and since then I have witnessed his remarkable professional growth.
+                  Santiago possesses a strong technical skill set and a highly decisive approach to development challenges. His ability to learn and adapt quickly is impressive, and he is always willing to take on additional responsibilities to ensure the success of the team. Santiago is a pleasure to work with, and his contribution to the team has been significant. His dedication and passion for development make him a valuable resource. I have no doubt that he will continue to thrive in his career.
+                  I wish Santiago all the best in his future endeavors!`
+                  : `Con Santiago comenzamos juntos en la misma empresa y desde entonces he sido testigo de su notable crecimiento profesional.
+                  Santiago posee un sólido conjunto de habilidades técnicas y un enfoque altamente resolutivo para los desafíos de desarrollo. Su capacidad para aprender y adaptarse rápidamente es impresionante, y siempre está dispuesto a asumir responsabilidades adicionales para garantizar el éxito del equipo. Es un placer trabajar con Santiago, y su contribución al equipo ha sido significativa. Su dedicación y pasión por el desarrollo lo convierten en un recurso valioso. No tengo dudas de que seguirá prosperando en su carrera.
+                  ¡Le deseo a Santiago lo mejor en sus futuros proyectos!`}
+              </TestimonialText>
+            </TestimonialContent>
+            <TestimonialAvatar
+              src={'https://avatars.githubusercontent.com/u/100777846?v=4'}
+              name={'Gaspar Muñoz'}
+              linkedin="https://www.linkedin.com/in/gaspar-mu%C3%B1oz-7a9825239/"
+            />
+          </Testimonial>
         </Stack>
       </Container>
     </Box>
