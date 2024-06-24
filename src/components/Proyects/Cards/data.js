@@ -7,7 +7,7 @@ export const proyects = [
     date: '2023...',
     githubRepo: 'https://github.com/hrefsolutions',
     state: 'in progress',
-
+    liveDemo: 'https://www.href.com.ar/',
     proyectImage: 'https://avatars.githubusercontent.com/u/145393564?v=4',
   },
   {
@@ -16,9 +16,7 @@ export const proyects = [
     description:
       'Front-end development of web pages for specific clients. Design and development from scratch in back-end. Fulfillment of objectives through agile methodologies (SCRUM).',
     date: '2023...',
-    githubRepo: 'https://github.com/imaginebigdev',
     state: 'finish',
-    liveDemo: 'https://www.imaginebig.dev/',
     proyectImage: 'https://i.ibb.co/VC7VTvt/1653564769609.jpg',
   },
   {
@@ -52,7 +50,7 @@ export const proyects2 = [
       'Como emprendedor apasionado y co-fundador de HREF soy parte de un equipo dinámico dedicado a la creación de soluciones digitales de vanguardia. "href" es un emprendimiento digital especializado en el diseño y desarrollo de sitios web de alto impacto, abarcando desde elegantes landing pages hasta completos sistemas de comercio electrónico.',
     date: '2023...',
     githubRepo: 'https://github.com/hrefsolutions',
-
+    liveDemo: 'https://www.href.com.ar/',
     state: 'in progress',
     proyectImage: 'https://avatars.githubusercontent.com/u/145393564?v=4',
   },
@@ -62,8 +60,6 @@ export const proyects2 = [
     description:
       'Desarrollo de full-stack para paginas web para clientes específicos. Diseño y desarrollo desde cero en back-end. Cumplimiento de objetivos mediante metodologias agiles (SCRUM).',
     date: 'Marzo 2023 - Septiembre 2023',
-    githubRepo: 'https://github.com/imaginebigdev',
-    liveDemo: 'https://www.imaginebig.dev/',
     state: 'finish',
     proyectImage: 'https://i.ibb.co/VC7VTvt/1653564769609.jpg',
   },

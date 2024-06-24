@@ -69,7 +69,7 @@ export default function ProyectCard({
         </Stack>
         <Stack mt={3}>
           <a href={githubRepo} target="_blank" rel="noreferrer">
-            <Button> Github Repo </Button>
+            <Button isDisabled={githubRepo ? false : true} > Github Repo </Button>
           </a>
           <a href={liveDemo} target="_blank" rel="noreferrer">
             <Button isDisabled={liveDemo ? false : true} colorScheme="blue">
